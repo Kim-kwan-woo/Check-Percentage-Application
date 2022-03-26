@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="fragment"
+            type="com.kwanwoo.android.presentation.view.ManNameFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -45,6 +47,7 @@
             android:background="@drawable/name_setting_btn_frame"
             android:gravity="center"
             android:text="궁합보기"
+            android:onClick="@{fragment::nextBtnClick}"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:padding="10dp"

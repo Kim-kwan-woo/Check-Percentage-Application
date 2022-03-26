@@ -9,20 +9,36 @@
         android:id="@+id/mainFragment"
         android:name="com.kwanwoo.android.presentation.view.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_womanNameFragment"
+            app:destination="@id/womanNameFragment" />
+    </fragment>
     <fragment
         android:id="@+id/manNameFragment"
         android:name="com.kwanwoo.android.presentation.view.ManNameFragment"
         android:label="fragment_man_name"
-        tools:layout="@layout/fragment_man_name" />
+        tools:layout="@layout/fragment_man_name" >
+        <action
+            android:id="@+id/action_manNameFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
     <fragment
         android:id="@+id/resultFragment"
         android:name="com.kwanwoo.android.presentation.view.ResultFragment"
         android:label="fragment_result"
-        tools:layout="@layout/fragment_result" />
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
     <fragment
         android:id="@+id/womanNameFragment"
         android:name="com.kwanwoo.android.presentation.view.WomanNameFragment"
         android:label="fragment_woman_name"
-        tools:layout="@layout/fragment_woman_name" />
+        tools:layout="@layout/fragment_woman_name" >
+        <action
+            android:id="@+id/action_womanNameFragment_to_manNameFragment"
+            app:destination="@id/manNameFragment" />
+    </fragment>
 </navigation>
