@@ -1,7 +1,7 @@
 package com.kwanwoo.android.checkpercentageapplication.di
 
-//import com.pss.check_percentage.utils.Utils.BASE_URL
-//import com.pss.data.remote.api.LoveCalculatorApi
+import com.kwanwoo.android.checkpercentageapplication.utils.Utils.BASE_URL
+import com.kwanwoo.android.data.remote.api.LoveCalculatorApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -35,7 +35,7 @@ object NetworkModule {
         gsonConverterFactory: GsonConverterFactory
     ): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("BASE_URL")
+            .baseUrl(BASE_URL)
             .client(okHttpClient)
             .client(provideHttpClient())
             .addConverterFactory(gsonConverterFactory)
@@ -48,11 +48,11 @@ object NetworkModule {
         return GsonConverterFactory.create()
     }
 
-//    @Provides
-//    @Singleton
-//    fun provideLoveCalculatorApiService(retrofit: Retrofit): LoveCalculatorApi {
-//        return retrofit.create(LoveCalculatorApi::class.java)
-//    }
+    @Provides
+    @Singleton
+    fun provideLoveCalculatorApiService(retrofit: Retrofit): LoveCalculatorApi {
+        return retrofit.create(LoveCalculatorApi::class.java)
+    }
 
 
     private fun getLoggingInterceptor(): HttpLoggingInterceptor =
