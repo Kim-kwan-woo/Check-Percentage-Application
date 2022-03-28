@@ -43,19 +43,31 @@
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/appCompatButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/name_setting_btn_frame"
             android:gravity="center"
-            android:text="궁합보기"
             android:onClick="@{fragment::nextBtnClick}"
-            android:textColor="@color/white"
-            android:textStyle="bold"
             android:padding="10dp"
+            android:text="궁합보기"
+            android:textColor="@color/white"
             android:textSize="16sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/loading_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/main_color"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -18,9 +18,12 @@ class ManNameFragment : BaseFragment<FragmentManNameBinding>(R.layout.fragment_m
     private val mainViewModel by activityViewModels<MainViewModel>()
     override fun init() {
         binding.fragment = this
+        observeViewModel()
     }
 
     fun nextBtnClick(view: View) {
+        binding.loadingBar.visibility = View.VISIBLE
+
         mainViewModel.checkLoveCalculator(
             "love-calculator.p.rapidapi.com",
             "2680d3153emsh6c2d370d2204a1dp189c51jsn8fbb5e8533f4",
@@ -32,6 +35,7 @@ class ManNameFragment : BaseFragment<FragmentManNameBinding>(R.layout.fragment_m
 
     private fun observeViewModel() {
         mainViewModel.apiCallEvent.observe(this) {
+            binding.loadingBar.visibility = View.INVISIBLE
             when(it) {
                 ScreenState.LOADING -> this.findNavController().navigate(R.id.action_manNameFragment_to_resultFragment)
                 ScreenState.ERROR -> toastErrorMsg()
