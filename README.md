@@ -2,10 +2,10 @@
   이름 궁합 어플리케이션
 </h1>
 <h3 align="center">
-  이 앱은 인프런의 강의를 참고하여 개발한 연습용 어플리케이션입니다.
+  이 앱은 인프런 강의를 참고하여 개발한 연습용 어플리케이션입니다.
 </h3>
 <h4 align="center">
-    <a href="https://www.inflearn.com/course/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%9D%B4%EB%A6%84%EA%B6%81%ED%95%A9">인프런 강의 - [노래 들으며 실전 프로젝트로 안드로이드 최신 기술을 공부해 보자! - 이름 궁합 편]</a>
+    <a href="https://www.inflearn.com/course/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%9D%B4%EB%A6%84%EA%B6%81%ED%95%A9">[노래 들으며 실전 프로젝트로 안드로이드 최신 기술을 공부해 보자! - 이름 궁합 편]</a>
 </h4>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/62555935/160608384-a5159400-b731-4d7f-9fdf-fa0b7f569954.png" width="250"/>
@@ -48,5 +48,5 @@ $ git clone https://github.com/Kim-kwan-woo/Check-Percentage-Application.git
 
 ## Reference
 
-<a href="https://github.com/ParkSangSun1/Check_Percentage">원본 코드 깃허브 주소</a> </br>
+<a href="https://github.com/ParkSangSun1/Check_Percentage">원본 코드 깃허브 주소</a> • 
 <a href="https://rapidapi.com/ajith/api/love-calculator/">사용 api 주소</a>
