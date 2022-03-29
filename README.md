@@ -48,5 +48,5 @@ $ git clone https://github.com/Kim-kwan-woo/Check-Percentage-Application.git
 
 ## Reference
 
-<a href="https://github.com/ParkSangSun1/Check_Percentage">원본 코드 깃허브 주소</a> • 
-<a href="https://rapidapi.com/ajith/api/love-calculator/">사용 api 주소</a>
+- <a href="https://github.com/ParkSangSun1/Check_Percentage">원본 코드 깃허브 주소</a>
+- <a href="https://rapidapi.com/ajith/api/love-calculator/">사용 api 주소</a>
