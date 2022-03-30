@@ -26,7 +26,7 @@ class ManNameFragment : BaseFragment<FragmentManNameBinding>(R.layout.fragment_m
 
         mainViewModel.checkLoveCalculator(
             "love-calculator.p.rapidapi.com",
-            "2680d3153emsh6c2d370d2204a1dp189c51jsn8fbb5e8533f4",
+            "your api key",
             binding.nameEditTxt.text.toString(),
             mainViewModel.womanNameResult)
 
