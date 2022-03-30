@@ -44,7 +44,9 @@
 $ git clone https://github.com/Kim-kwan-woo/Check-Percentage-Application.git
 ```
 
-2. Run this app in your AVD
+2. input your api key at presentation/com/kwanwoo/android/presentation/view/ManNameFragment.kt
+ 
+3. Run this app in your AVD
 
 ## Reference
 
